@@ -1,0 +1,652 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<title>2020第十届中国数据库技术大会</title>
+<meta name="description" content=""/>
+<link rel="stylesheet" href="include/swiper.min.css">
+<link rel="stylesheet" href="include/style1.css">
+<style>
+ a:hover{
+    text-decoration: none;
+  }
+  .yicheng_box a:hover{
+    text-decoration: underline;
+  }
+  .switch_tab span{
+    display: inline-block;
+    margin-right: 50px;
+    cursor: pointer;
+  }
+  .switch_tab span.cur{
+    color: #f08200;
+  }
+  .switch_tab-content .tabpane{
+    display: none;
+  }
+  .switch_tab-content .active{
+    display: block;
+  }
+  .tit .cur i{
+    border-bottom: 5px dotted #ff9820;
+  }
+.zhidao_danwei .dtcc_img{
+	width:330px;
+}
+
+/*.nav li a.peixun{ display:block; background:url(../Image/peixun.png) no-repeat;padding-left:40px;}*/
+ @media screen and (max-width:768px) {
+         .nav li a.peixun{
+           background: none !important;
+           padding-left: 0 !important;
+          }
+      }
+</style>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/countUp.js"></script>
+<script type="text/javascript" src="js/waypoint.js"></script>
+</head>
+<body>
+	
+<div class="head">
+	  <div class="logo"><img src="images/logo.png" alt=""/></div>
+	  <div class="m_nav"></div>
+	  <div class="nav">
+		<ul>
+		  <li>
+			 <a href="index.html" class="index">首页</a>
+		  </li>
+		  <li><a href="goupiao.html" class="goupiao">购票</a></li>
+		  <li><a href="jiangshi.html" class="jiangshi">讲师申请</a></li> 
+		  <li><a href="zhinan.html" class=zhinan>参会指南</a></li>
+		  <li><a href="https://jinshuju.net/f/RLCTtL" class="hezuo">商务合作</a></li>
+
+		</ul>
+	  </div>
+	
+</div>
+	
+<div class="banner"><img src="images/banner2.jpg" alt=""/></div>
+<div class="index_bg">
+  <div class="tit">大会简介<i></i></div>
+</div>
+<div class="jianjie">
+  <div class="cont">
+    <p>2019年5月8日~5月10日，由 IT168 旗下 ITPUB 企业社区平台主办的第十届中国数据库技术大会（DTCC2019），将在北京隆重召开。大会将邀请百余位行业专家，就热点技术话题进行分享，是广大数据领域从业人士的又一次年度盛会和交流平台。
+    </p>
+    <p>与 SACC2018 类似，本届大会将采用“3+2”模式：3天传统技术演讲+2天深度主题培训。大会不仅提供超100场的主题演讲，还会提供连续2天的深度课程培训，深化数据领域的项目落地实践方案。</p>
+    <p>作为国内顶级的数据领域技术盛会，10年来，DTCC 见证了国内数据库技术的迅猛发展，各种分布式数据库、NoSQL、NewSQL 技术异军突起，与 Oracle、DB2 等分庭抗礼，甚至大有超越之势。在这种背景下，ITPUB 将组织历时半年的数据领域评选活动，向大家展现对数据领域起到了重大推动与贡献作用的热点技术、企业与技术专家。 </p>
+    <p>DTCC2019，一场值得期待的数据技术盛会，殷切地希望您报名参与！</p>
+  </div>
+  <ul>
+    <li>
+      <div>
+        <p class="page3_icon1"><img src="images/page3_icon2.png" alt=""></p>
+        <em class="counter1">600</em><b>+</b></div>
+      <i>主题演讲</i></li>
+    <li>
+      <div>
+       <p class="page3_icon1"><img src="images/page3_icon3.png" alt=""></p>
+       <em class="counter2">1600</em><b>+</b></div>
+       <i>技术领袖</i></li>
+    <li>
+      <div>
+        <p class="page3_icon1"><img src="images/page3_icon4.png" alt=""></p>
+        <em class="counter3">20000</em><b>+</b>
+      </div>
+      <i>参会人次</i></li>
+    <li>
+      <div>
+        <p class="page3_icon1"><img src="images/page3_icon1.png" alt=""></p>
+        <em class="counter4">300</em><b>+</b>
+      </div>
+      <i>合作媒体</i></li>
+  </ul>
+  <script>
+
+    function startRun() {
+      $('.counter1').countUp({
+        // delay: 10,
+        time: 2000
+      });
+      $('.counter2').countUp({
+        // delay: 10,
+        time: 3000
+      });
+      $('.counter3').countUp({
+        // delay: 10,
+        time: 5000
+      });
+
+      $('.counter4').countUp({
+        // delay: 10,
+        time: 1500
+      });
+      time = setTimeout(startRun, 63000);
+    }
+    startRun()
+  </script>
+</div>
+<div class="tubiao"></div>
+<div class="w1200">
+	<div class="tit">精彩视频 <i></i></div>
+	<div class="video_tit">
+	  <video src="http://zt.itpub.net/topic/video/ncsp.mp4" controls="controls" id="frame" autoplay=""></video>
+	</div>
+</div>
+
+
+<div class="w1200">
+  <div class="tit">大会议程 <i></i></div>
+  <div class="yicheng_box">
+    <div class="yicheng_1">
+      <div class="up up_gap"><span>5月8日</span>
+        <div class="shangwu">上午</div>
+        <p><a href="yicheng.html#b1">主场 1：数据架构 十年变迁</a></p>
+      </div>
+      <div class="shangwu">下午</div>
+      <p class="p1"><a href="yicheng.html#b7">专场：数据库内核技术</a><br>
+        <a href="yicheng.html#b4">专场：AI 与大数据应用（上）</a><br>
+        <a href="yicheng.html#b5">专场：NoSQL 技术与实践</a><br>
+        <a href="yicheng.html#b6">专场：金融行业数据库实践（上）</a><br>
+        <a href="yicheng.html#b8">专场：云时代的数据库（上）</a><br>
+        <a href="#b23">专场：达梦数据库发布会</a>
+      </p>
+    </div>
+    <div class="yicheng_2">
+      <div class="up2"><span>5月9日</span>
+        <div class="shangwu">上午</div>
+        <p><a href="yicheng.html#b2">主场 2：数据架构 十年变迁</a></p>
+      </div>
+      <div class="shangwu">下午</div>
+      <p class="p1"><a href="yicheng.html#b3">专场：数据架构设计实践（上）<br>
+        <a href="yicheng.html#b9">专场：AI 与大数据应用（下）</a><br>
+        <a href="yicheng.html#b10">专场：分布式数据库实践（上）</a><br>
+        <a href="yicheng.html#b11">专场：金融行业数据库实践（下）</a><br>
+        <a href="yicheng.html#b20">专场：云时代的数据库（下）</a></p>
+    </div>
+    <div class="yicheng_3">
+      <div class="up3"><span>5月10日</span>
+        <div class="shangwu">上午</div>
+        <p><a href="yicheng.html#b13">专场：数据架构设计实践（下）</a><br>
+          <a href="yicheng.html#b21">专场：AI 时代的算法应用</a><br>
+          <a href="yicheng.html#b15">专场：分布式数据库实践（下）</a><br>
+          <a href="yicheng.html#b16">专场：数据安全</a><br>
+          <a href="yicheng.html#b12">专场：性能优化与诊断</a></p>
+      </div>
+      <div class="shangwu">下午</div>
+      <p class="p1"><a href="yicheng.html#b18">专场：数据库智能运维</a><br>
+        <a href="yicheng.html#b14">专场：数据仓库与数据治理实践</a><br>
+        <a href="yicheng.html#b17">专场：图数据库技术与实践</a><br>
+		<a href="yicheng.html#b19">专场：数据存储与加速技术</a><br>
+        <a href="yicheng.html#b22">专场：SQL 优化与审计</a></p>
+    </div>
+  </div>
+  <!-- <div class="yicheng_box yicheng_box2" style='display:block'>
+    <div class="yicheng_4">
+      <div class="up4" style='padding-top:13px;'><span>5月11日 全天</span>
+        <p class="p2"><a href="kecheng.html#n1">深度培训 1：知数堂 MySQL 实战集训课程（上）</a><br>
+          <a href="kecheng.html#n2">深度培训 2：基于案例的 SQL 优化实战训练营（上）</a><br>
+          <a href="kecheng.html#n4">深度培训 3：PostgreSQL 技术实战（上）</a></p>
+      </div>
+    </div>
+    <div class="yicheng_5">
+      <div class="up4" style='padding-top:13px;'><span>5月12日 全天</span>
+        <p class="p2"><a href="kecheng.html#n1">深度培训 1：知数堂 MySQL 实战集训课程（下）</a><br>
+          <a href="kecheng.html#n2">深度培训 2：基于案例的 SQL 优化实战训练营（下）</a><br>
+          <a href="kecheng.html#n4">深度培训 3：PostgreSQL 技术实战（下）</a></p>
+      </div>
+    </div> -->
+  </div>
+</div>
+<div class="guwen">
+  <div class="tit">专家顾问团<i></i></div>
+  <ul>
+    <li>
+      <div><img src="images/guwen/yangzhenkun.jpg" alt="" width="165" height="165" /> <b>阳振坤</b>
+        <p>蚂蚁金融服务集团<br>
+          高级研究员</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/lifeifei.jpg" alt="" width="165" height="165" /> <b>李飞飞</b>
+        <p>阿里巴巴集团<br>
+          副总裁，阿里云智能数据库事业部总负责人</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/jiangjie.jpg" alt="" width="165" height="165" /> <b>蒋杰</b>
+        <p>腾讯<br>
+          数据平台部总经理</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/niuxinzhuang.jpg" alt="" width="165" height="165" /> <b>牛新庄</b>
+        <p>中国民生银行<br>
+          信息科技部总经理</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/gaiguoqiang.jpg" alt="" width="165" height="165" /> <b>盖国强</b>
+        <p>云和恩墨<br>
+          创始人</p>
+      </div>
+    </li>
+	<li>
+      <div><img src="images/guwen/lvmanyi.jpg" alt="" width="165" height="165" /> <b>吕漫漪</b>
+        <p>阿里云<br>
+          研究员</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/liuhaifeng.jpg" alt="" width="165" height="165" /> <b>刘海锋</b>
+        <p>京东商城<br>
+          技术副总裁</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/shenjian.jpg" alt="" width="165" height="165" /> <b>沈剑</b>
+        <p>快狗打车<br>
+          CTO</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/liuqirong.jpg" alt="" width="165" height="165" /> <b>刘启荣</b>
+        <p>京东数科<br>
+          技术总监</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/lihaixiang.jpg" alt="" width="165" height="165" /> <b>李海翔</b>
+        <p>腾讯<br>
+          金融云数据库技术专家</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/luoli.jpg" alt="" width="165" height="165" /> <b>罗李</b>
+        <p>滴滴出行<br>
+          大数据平台负责人</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/xiaopeng.jpg" alt="" width="165" height="165" /> <b>肖鹏</b>
+        <p>贝壳找房<br>
+          技术总监</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/wubingxi.jpg" alt="" width="165" height="165" /> <b>吴炳锡</b>
+        <p>知数堂<br>
+          联合创始人</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/jinguanding.jpg" alt="" width="165" height="165" /> <b>金官丁</b>
+        <p>上海热璞科技<br>
+          创始人兼 CTO</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/shisong.jpg" alt="" width="165" height="165" /> <b>石松</b>
+        <p>爱奇艺<br>
+          技术品牌研究员</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/liyuanjia.jpg" alt="" width="165" height="165" /> <b>李元佳</b>
+        <p>杭州云徙科技有限公司<br>
+          联合创始人及 CTO</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/zhouyanwei.jpg" alt="" width="165" height="165" /> <b>周彦伟</b>
+        <p>极数云舟<br>
+          创始人及 CEO，ACMUG 创始人</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/pengzhiyong.jpg" alt="" width="165" height="165" /> <b>彭智勇</b>
+        <p>武汉大学<br>
+          计算机学院教授</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/simayunrui.jpg" alt="" width="165" height="165" /> <b>司马云瑞</b>
+        <p>小米<br>
+          大数据负责人</p>
+      </div>
+    </li>
+	<li>
+      <div><img src="images/guwen/bachuan.jpg" alt="" width="165" height="165" /> <b>巴川</b>
+        <p>竞技世界<br>
+          首席数据科学家</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/suxuhui.jpg" alt="" width="165" height="165" /> <b>苏旭辉</b>
+        <p>ITPUB 社区<br>
+          开发版资深版主，SQL 开发专家</p>
+      </div>
+    </li>
+	<li>
+      <div><img src="images/guwen/yulihua.jpg" alt="" width="165" height="165" /> <b>余利华</b>
+        <p>网易<br>
+          数据库和大数据总监</p>
+      </div>
+    </li>
+	<li>
+      <div><img src="images/guwen/wangwei.jpg" alt="" width="165" height="165" /> <b>王伟</b>
+        <p>京东商城<br>
+          数据库智能运维平台负责人</p>
+      </div>
+    </li>
+  <li>
+      <div><img src="images/guwen/zhaozhenping.jpg" alt="" width="165" height="165" /> <b>赵振平</b>
+        <p>太阳塔科技<br>
+          CTO、PostgreSQL 中国社区主席</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/yangxiaohua.jpg" alt="" width="165" height="165" /> <b>杨小华</b>
+        <p>新数科技<br>
+          联合创始人、CTO</p>
+      </div>
+    </li>
+    <li>
+      <div><img src="images/guwen/huangzhekeng.jpg" alt="" width="165" height="165" /> <b>黄哲铿</b>
+        <p>中通商业<br>
+          CTO</p>
+      </div>
+    </li>
+  </ul>
+  <div class="clear"></div>
+</div>
+<div class="bg2">
+  <div class="w1200 clearfix">
+    <div class="zu_l">
+      <div class="tit">大会组委会<i></i></div>
+      <ul class="list list_2">
+        <li><img src="images/shenjian.jpg" alt=""><b>沈剑</b><i>快狗打车（原58速运）</i> <em>CTO</em></li>
+        <li><img src="images/tangchuan.jpg" alt=""><b>唐川<strong id="chuang1"></strong></b><i>ITPUB-ChinaUnix 总经理</i> <em>DTCC 数据库技术大会创始人<br>
+          </em></li>
+        <li><img src="images/huangweiwei.jpg" alt=""><b>黄围围<strong id="chuang2"></strong></b><i>ITPUB-ChinaUnix</i> <em>IT 培训咨询部运营总监</em></li>
+        <li><img src="images/mengmeng.jpg" alt=""><b>墨萌萌<strong id="chuang3"></strong></b><i>ITPUB-ChinaUnix</i> <em>IT 培训咨询部运营经理</em></li>
+      </ul>
+    </div>
+    <div class="zu_r">
+	 <p class="zhidao_danwei">
+		  <span>指导单位：</span>
+		  <span> <img src="dtcc_image/dashuju.PNG" alt="" class="dtcc_img"></span>
+	  </p>
+      <div class="tit">主办方简介<i></i></div>
+	  
+      <p>　　&nbsp;ITPUB 社区平台，为盛拓传媒（IT168）旗下业务，其包括 ITPUB 社区、ChinaUnix 社区、ITPUB 学院、博客、文库、CTO 俱乐部和 SACC（中国系统架构师大会）、DTCC（中国数据库技术大会）等平台业务，为用户提供技术交流、培训咨询等服务。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ITPUB 与 ChinaUnix 是历经17年的 IT 技术社区，具有几百万会员。SACC、DTCC 分别是历经10年，超过1500人的培训会议，累计超过2000位版主、技术专家、演讲嘉宾分享主题，超3万技术人参加培训大会。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ITPUB 学院，提供包括企业应用方案培训咨询（包括企业内训）、个人实战培训在内的 IT 培训咨询服务。</p>
+    </div>
+  </div>
+</div>
+<div class="w1200 wangjie">
+  <div class="tit">往届回顾<i></i></div>
+  <img src="images/wangqi.jpg" alt="" width="1200" height="327" usemap="#Map"/>
+  <map name="Map">
+    <area shape="circle" coords="367,102,44" href="http://dtcc.it168.com/2013/" target="_blank">
+    <area shape="circle" coords="1107,56,52" href="http://dtcc.it168.com/2019/" target="_blank">
+    <area shape="circle" coords="1027,136,32" href="http://dtcc.it168.com/2018/" target="_blank">
+    <area shape="circle" coords="969,214,44" href="http://dtcc.it168.com/2017/" target="_blank">
+    <area shape="circle" coords="501,193,39" href="http://dtcc.it168.com/2014/" target="_blank">
+    <area shape="circle" coords="640,236,38" href="http://dtcc.it168.com/2015/" target="_blank">
+    <area shape="circle" coords="801,182,43" href="http://dtcc.it168.com/2016/" target="_blank">
+    <area shape="circle" coords="261,202,28" href="http://dtcc.it168.com/2012/" target="_blank">
+    <area shape="circle" coords="148,253,35" href="http://dtcc.it168.com/2011/" target="_blank">
+    <area shape="circle" coords="50,165,22" href="http://dtcc.it168.com/2010/" target="_blank">
+  </map>
+</div>
+<div class="canhui">
+  <div class="w1200">
+   <div class="switch" id="switch">
+    <p class="tit switch_tab">
+        <span class="cur">
+          参会指南
+          <i></i>
+        </span>
+        <span class="">
+          住宿推荐
+          <i></i>
+        </span>
+    </p>
+    <div class="switch_tab-content">
+       <div class="tabpane active">
+          <h3>场馆信息：</h3>
+          <p> 北京新云南皇冠假日酒店位于北京市北三环太阳宫桥东北角，距北京首都国际机场仅27分钟车程、毗邻中国国际展览中心、鸟巢及奥林匹克公园、三里屯、燕莎 CBD 等观光商务场所。无论是商务还是观光度假，都是非常便利的地理位置。 酒店拥有519间设计独特、宽敞舒适客房和套房。让您居高临下一览首都风貌。</p>
+          <div class="home-msg_active">
+            <div class="left">
+              <img src="dtcc_image/dizhi.jpg">
+            </div>
+            <div class="right">
+              <div>
+                <h3>【会场地址】：</h3>
+                 新云南皇冠假日酒店（五星级）</br>
+                 北京市朝阳区东北三环西坝河太阳宫桥东北角云南大厦
+              </div>
+              <p><h3>【联系电话】：</h3>010-64298888</p>
+              <p><h3>【乘车路线】：</h3>596，419，379，运通104，942路快，980路快，984路快，984路，在太阳宫桥站下车400米；</p>
+              <p><h3></h3>
+                 乘坐地铁十号线芍药居站E口出来左转（太阳宫桥东北角）即可到达。地铁十三号线光熙门站下车；
+              </p>
+             <p> <h3>【自驾路线】：</h3>三元西桥（国展桥）走辅路，向北四环方向（京承高速公路）走即可到达酒店正门</p>
+            </div>
+          </div>
+
+          <div class="clear">
+
+          </div>
+       </div>
+       <!-- 住宿推荐 -->
+       <div class="tabpane tabpane2">
+
+          <h3><span>2019数据库技术大会住宿说明：</span>(以下酒店为本次大会推荐酒店，住宿费用自理。)</h3>
+          <div class="paragraph_stage">
+           1、新云南皇冠假日酒店（五星级）<br/>
+             北京市朝阳区东北三环西坝河太阳宫桥东北角云南大厦<br/>
+             参考房型：标准间/大床房等<br/>
+             参考房价：950元/间夜<br/>
+             酒店电话：400-080-7006<br/>
+          </div>
+          <div class="paragraph_stage">
+           2、三元桥宜必思酒店（三星级）<br/>
+            北京市朝阳区曙光西里甲5号院17号楼（地铁10号线三元桥站东北口）<br>
+            参考房型：标准间/大床房等<br/>
+            酒店电话：(010)58296999<br/>
+          </div>
+          <div  class="paragraph_stage">
+            3、平安京忆栈酒店（三星级）<br/>
+            北京市朝阳区光熙门北里34号（近地铁13号线光熙门站）<br>
+            参考房型：标准间/大床房等<br/>
+            酒店电话：(010)64228181<br/>
+          </div>
+          <div  class="paragraph_stage">
+            <h3>住宿配置：</h3>
+
+            新云南皇冠假日酒店（五星级大酒店）<br/>
+            酒店标准客房一共有高级双床房、标准大床房、高级大床房、豪华大床房和豪华套房五种房型， <br/>
+            为确保您能获得舒适的住宿体验，所有房型均配备高科技的设施供您使用，客房配备设施如下：舒适之床、液晶纯平电视、高速因特网接口和舒适的浴室设施等。
+         </div>
+         <div class="paragraph_stage2"><img src="images/map.jpg"></div>
+
+   </div>
+  </div>
+
+  </div>
+</div>
+<div class="support_cont">
+
+<!--
+<div class="w1200">
+  <div class="tit">厂商赞助<i></i></div>
+  <div class="tit2">钻石赞助</div>
+  <ul class="list2">
+    <li><img src="images/shangye/dameng.jpg" alt=""></li>
+    <li><img src="images/shangye/langchao.jpg" alt=""></li>
+    <li><img src="images/shangye/alibaba.jpg" alt=""></li>
+    <li><img src="images/shangye/aliyun.jpg" alt=""></li>
+    <li><img src="images/shangye/oracle.jpg" alt=""></li>
+  </ul>
+  <div class="tit2">铂金赞助</div>
+  <ul class="list2">
+    <li><img src="images/shangye/jushan.jpg" alt=""></li>
+    <li><img src="images/shangye/huawei.jpg" alt=""></li>
+    <li><img src="images/shangye/tengxun.jpg" alt=""></li>
+    <li><img src="images/shangye/xinshu.jpg" alt=""></li>
+    <li><img src="images/shangye/repukeji.jpg" alt=""></li>
+  </ul>
+
+  <div class="tit2">黄金赞助</div>
+  <ul class="list2 list-bottom_gap">
+    <li><img src="images/shangye/baocunkeji.jpg" alt=""></li>
+    <li><img src="images/shangye/xinghuan.jpg" alt=""></li>
+    <li><img src="images/shangye/xingruige.jpg" alt=""></li>
+    <li><img src="images/shangye/mem.jpg" alt=""></li>
+    <li><img src="images/shangye/haobo.jpg" alt=""></li>
+    <li><img src="images/shangye/woqukeji.jpg" alt=""></li>
+    <li><img src="images/shangye/pingankeji.jpg" alt=""></li>
+    <li><img src="images/shangye/pingcap.jpg" alt=""></li>
+    <li><img src="images/shangye/silcroad.jpg" alt=""></li>
+    <li><img src="images/shangye/yunheenmo.jpg" alt=""></li>
+    <li><img src="images/shangye/huashengxintai.jpg" alt=""></li>
+    <li><img src="images/shangye/renda.jpg" alt=""></li>
+    <li><img src="images/shangye/taiyangta.jpg" alt=""></li>
+    <li><img src="images/shangye/zilliz.jpg" alt=""></li>
+    <li><img src="images/shangye/zhongxing.jpg" alt=""></li>
+     <li><img src="images/shangye/xingruige.jpg" alt=""></li>
+    <li><img src="images/shangye/qingyun.jpg" alt=""></li>
+    <li><img src="images/shangye/nandatongyong.jpg" alt=""></li>
+    <li><img src="images/shangye/aikesheng.jpg" alt=""></li>
+    <li><img src="images/shangye/tianxi.jpg" alt=""></li>
+    <li><img src="images/shangye/borui.jpg" alt=""></li>
+    <li><img src="images/shangye/yihekeji.jpg" alt=""></li>
+    <li><img src="images/shangye/mongoDB.jpg" alt=""></li>
+    <li><img src="images/shangye/silcroadsoft.jpg" alt=""></li>
+    <li><img src="images/shangye/zhongyikeji.jpg" alt=""></li>
+    <li><img src="images/shangye/youxuan.jpg" alt=""></li>
+    <li><img src="images/shangye/wenwu.jpg" alt=""></li> 
+  </ul>
+
+</div>
+</div>
+-->
+<!--
+<div class="w1200">
+  <div class="tit2">合作伙伴</div>
+  <ul class="list2">
+    <li><img src="images/shangye/baige.jpg" alt=""></li>
+    <li><img src="images/shangye/huodongjia.jpg" alt=""></li>
+    <li><img src="images/shangye/zhongkekaiya.jpg" alt=""></li>
+    <li><img src="images/shangye/zhimeng.jpg" alt=""></li>
+    <li><img src="images/shangye/huishitong.jpg" alt=""></li>
+    <li><img src="images/shangye/bjkunde.jpg" alt=""></li>
+    <li><img src="images/shangye/huazhang.jpg" alt=""></li>
+    <li><img src="images/shangye/bowenshidian.jpg" alt=""></li>
+    <li><img src="images/shangye/qinghua.jpg" alt=""></li>
+    <li><img src="images/shangye/yibushequ.jpg" alt=""></li>
+     <li><img src="images/shangye/tuling.jpg" alt=""></li> 
+  </ul>
+  <div class="tit2">合作媒体</div>
+  <ul class="list2">
+    <li><img src="images/shangye/kaiyuanzhongguo.jpg" alt=""></li>
+    <li><img src="images/shangye/cioshidai.jpg" alt=""></li>
+    <li><img src="images/shangye/csdn.jpg" alt=""></li>
+    <li><img src="images/shangye/doit.jpg" alt=""></li>
+    <li><img src="images/shangye/idcquan.jpg" alt=""></li>
+    <li><img src="images/shangye/dongfanganquan.jpg" alt=""></li>
+    <li><img src="images/shangye/jifang360.jpg" alt=""></li>
+    <li><img src="images/shangye/diyinet.jpg" alt=""></li>
+    <li><img src="images/shangye/ruanjianic.jpg" alt=""></li>
+    <li><img src="images/shangye/shujuyuan.jpg" alt=""></li>
+    <li><img src="images/shangye/shuzizhongguo.jpg" alt=""></li>
+    <li><img src="images/shangye/xjrong.jpg" alt=""></li>
+    <li><img src="images/shangye/zhongguoruanjian.jpg" alt=""></li>
+    <li><img src="images/shangye/meikewang.jpg" alt=""></li>
+  </ul>
+</div>
+-->
+<div class="footer_box footer_gap">
+  <div class="footer">
+    <div class="footer_1"><b>联系我们</b>
+      <ul>
+        <li> 票务咨询：15810741009 </li>
+        <li> 　　　　　meeting@itpub.net </li>
+        <li> 媒体合作：media@it168.com </li>
+        <li> 议题申请：topic@itpub.net </li>
+      </ul>
+    </div>
+    <div class="footer_2"><b>商务合作</b>
+      <ul>
+        <li>salesgroup@it168.com</li>
+		<li>18514090168</li>
+      </ul>
+    </div>
+    <div class="footer_3"><b>关于我们</b>
+      <div class="guanyu">
+      <div class="col-md-5">
+        <p class="p1"><img src="images/er.png" width="110" height="110" alt=""/></p>
+        <p class="p2">ITPUB 官方微信</p>
+      </div>
+		  <div class="col-md-5">
+       <p class="p1"><img src="images/er2.jpg" width="110" height="110" alt=""/></p>
+       <p class="p2">ITPUB 技术栈</p>  
+      </div>
+		 
+	  </div>
+    </div>
+    <div class="footer_4"><b>主办方</b>
+      <div><img src="images/zhubanfang.jpg" width="91" height="134" alt=""/></div>
+    </div>
+  </div>
+</div>
+<div id="chuang11">
+  <div class="chuang_bg" id="chuang_1"></div>
+  <div class="chuang"><img src="images/chuang1.jpg" alt=""><span>微信扫一扫或识别二维码</span></div>
+</div>
+<div id="chuang22">
+  <div class="chuang_bg" id="chuang_2"></div>
+  <div class="chuang"><img src="images/chuang2.jpg" alt=""><span>微信扫一扫或识别二维码</span></div>
+</div>
+<div id="chuang33">
+  <div class="chuang_bg" id="chuang_3"></div>
+  <div class="chuang"><img src="images/chuang3.jpg" alt=""><span>微信扫一扫或识别二维码</span></div>
+</div>
+<div class="imediate_tickets">
+  <a href="http://dtcc.it168.com/goupiao.html">立即购票</a>
+  <a href="http://dtcc.it168.com/jiangshi.html">讲师申请</a>
+</div>
+
+<script type="text/javascript">
+   $("#switch span").click( function () {
+      var index=$(this).index();
+      $(this).addClass('cur').siblings().removeClass('cur')
+      $('.tabpane').eq(index).show().siblings().hide();
+
+  })
+
+
+  $(".m_nav").click( function () { $(".nav").fadeToggle(300);
+    $("body").toggleClass("body2");
+     }
+  );
+$("#chuang1").click(function(){$("#chuang11").show();});
+$("#chuang_1").click(function(){$("#chuang11").hide();});
+
+$("#chuang2").click(function(){$("#chuang22").show();});
+$("#chuang_2").click(function(){$("#chuang22").hide();});
+$("#chuang3").click(function(){$("#chuang33").show();});
+$("#chuang_3").click(function(){$("#chuang33").hide();});
+</script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript"></script>
+<script src="js/sharwx.js" type="text/javascript"></script>
+
+<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+
+</body>
+</html>

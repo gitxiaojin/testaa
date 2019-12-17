@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<title>2019第十届中国数据库技术大会</title>
+<meta name="description" content=""/>
+<link rel="stylesheet" href="include/style.css">
+
+<style type="text/css">
+ @media screen and (max-width:768px) {
+         .nav li a.peixun{
+         background: none !important;
+    padding-left: 0 !important;
+          }
+      }
+  /*.nav li a.peixun{ display:block; background:url(../Image/peixun.png) no-repeat;padding-left:40px;}*/
+
+  </style>
+</style>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script src="http://zt.itpub.net/js/talert.js"></script>
+<script src="http://zt.itpub.net/js/common.js"></script>
+</head>
+
+<body class="body3">
+	
+	
+<div class="head">
+	<div class="head_cont">
+	  <div class="logo"><img src="images/logo.png" alt=""/></div>
+	  <div class="m_nav"></div>
+	  <div class="nav">
+		<ul>
+		  <li>
+			 <a href="index.html" class="index">首页</a>
+		  </li>
+		  <li><a href="goupiao.html" class="goupiao">购票</a></li>
+		  <li><a href="jiangshi.html" class="jiangshi">讲师申请</a></li> 
+		  <li><a href="zhinan.html" class=zhinan>参会指南</a></li>
+		  <li><a href="https://jinshuju.net/f/RLCTtL" class="hezuo">商务合作</a></li>
+
+		</ul>
+	  </div>
+	</div>
+</div>
+	
+<div class="w1200">
+  <div class="tit">讲师申请<i></i></div>
+  <div class="jiangshi2"><span>演讲嘉宾信息申请：</span>
+    <p>如果您想更深入的参与到2019中国数据库技术大会，为与会者带来您的精彩分享，请完整填写以下演讲嘉宾申请信息。组委会将对您提交的议题进行审核，如符合要求者，组委会将向您发出演讲嘉宾邀请。<br>
+      师者，传道受业解惑也！当您具备专业的IT技术知识或丰富的项目实战经验，却苦于知音难觅，怀才不遇，ITPUB
+      学院诚邀您加入我们的讲师团队。<br>
+      <br>
+      ITPUB学院是ITPUB企业平台的在线学习咨询平台，打造全方位的技术培训与技术咨询服务，提供包括企业应用方案培训咨询（包括企业内训）、个人实战技术培训（包括认证培训）在内的全方位IT技术培训咨询服务。全新的ITPUB企业垂直门户平台，全新的在线培训咨询平台！<br>
+      联系人：黄老师
+      13699173494</p>
+  </div>
+  <div class="jiangshi2"><span>演讲议题申请要求：</span>
+    <p>内容须紧扣大会场次设置主题，体现大会主旨。演讲者除需要提交个人信息外，还需在申请时提交演讲主题、演讲简介等信息。</p>
+  </div>
+  <ul class="jiangshi2_list">
+    <script language="javascript">
+
+            (function ($) {
+                $.fn.serializeJson = function () {
+                    var serializeObj = {};
+                    $(this.serializeArray()).each(function () {
+                        serializeObj[this.name] = this.value;
+                    });
+                    return serializeObj;
+                };
+            })(jQuery);
+
+            function save() {
+                if (!LFLCheck()) return false;
+                var fromData = "periodid=3500&name=" + $('#c_6756').val() + "&identity=1" +
+                    "&phone=" + $('#c_6758').val() + "&information=" + encodeURI(JSON.stringify($('#myform').serializeJson()));
+                $.ajax({
+                    url: "http://zt.itpub.net/common/register/more",
+                    type: "post",
+                    data: fromData,
+					crossDomain:true,
+                    dataType: "json",
+                    success: function (data) {
+                        var content = '非常抱歉，您的申请数据提交失败，请稍后再试。';
+                        if (data.code == 200) {
+                            content = '您的申请已提交，请等待工作人员的电话确认！';
+                        }else if(data.code==201){
+							content = '该手机号已经提交过，不能重复提交。';
+						}
+                        talert.message(content);
+                        data.code == 200 && setTimeout(function () {
+                            window.location.reload();
+                        }, 4000);
+                    }
+                });
+                return false;
+            }
+
+            function LFLCheck() {
+                var flag = true;
+
+                if (document.myform.c_6756.value == '') {
+                    flag = false;
+                    talert.message('姓名不能为空');
+                    return flag;
+                }
+
+                if (document.myform.c_6760.value == '') {
+                    flag = false;
+                    talert.message('公司不能为空');
+                    return flag;
+                }
+
+                if (document.myform.c_6761.value == '') {
+                    flag = false;
+                    talert.message('职位不能为空');
+                    return flag;
+                }
+
+                if (document.myform.c_6758.value == '') {
+                    flag = false;
+                    talert.message('手机不能为空');
+                    return flag;
+                }
+
+                if (!topic.vali(myform.c_6758.value, 'phone')) {
+                    talert.message('手机号格式不正确');
+                    flag = false;
+                    return flag;
+                }
+
+                if (document.myform.c_6759.value == '') {
+                    flag = false;
+                    talert.message('邮箱不能为空');
+                    return flag;
+                }
+                if (!topic.vali(myform.c_6759.value, 'email')) {
+                    talert.message('邮箱格式不正确');
+                    flag = false;
+                    return flag;
+                }
+
+                if (document.myform.e_6757.selectedIndex == 0) {
+                    flag = false;
+                    talert.message('请选择申请场次');
+                    return flag;
+                }
+
+                if (document.myform.d_6762.value == '') {
+                    flag = false;
+                    talert.message('申请人简介不能为空');
+                    document.myform.d_6762.focus();
+                    return flag;
+                }
+
+                if (document.myform.c_6763.value == '') {
+                    flag = false;
+                    talert.message('申请演讲题目不能为空');
+                    return flag;
+                }
+
+                if (document.myform.d_6764.value == '') {
+                    flag = false;
+                    talert.message('演讲题目简介不能为空');
+                    document.myform.d_6764.focus();
+                    return flag;
+                }
+                return flag;
+            }
+        </script>
+    <form onSubmit='return save()' name=myform id=myform>
+      <li><span>姓名</span>
+        <INPUT type='text' id=c_6756 name=c_6756 class="inp"/>
+        <i>*</i></li>
+      <li><span>公司</span>
+        <INPUT type='text' id=c_6760 name=c_6760 class="inp"/>
+        <i>*</i></li>
+      <li><span>职位</span>
+        <INPUT type='text' id=c_6761 name=c_6761 class="inp"/>
+        <i>*</i></li>
+      <li><span>手机</span>
+        <INPUT type='text' id=c_6758 name=c_6758 class="inp"/>
+        <i>*</i></li>
+      <li><span>邮箱</span>
+        <INPUT type='text' id=c_6759 name=c_6759 class="inp"/>
+        <i>*</i></li>
+      <li><span>申请场次</span>
+        <SELECT id=e_6757 name=e_6757 class="sel">
+          <OPTION> - - 请选择 - -</OPTION>
+          <OPTION>大会主场1：数据架构 十年变迁 </OPTION>
+          <OPTION>专场：数据库架构实践（上） </OPTION>
+          <OPTION>专场：：AI与大数据应用（上） </OPTION>
+          <OPTION>专场：NoSQL技术与实践 </OPTION>
+          <OPTION>专场：金融行业数据库实践 </OPTION>
+          <OPTION>专场：数据库内核技术 </OPTION>
+          <OPTION>大会主场2：大数据应用变革 </OPTION>
+          <OPTION>专场：云时代的数据库 </OPTION>
+          <OPTION>专场：AI与大数据应用（下） </OPTION>
+          <OPTION>专场：NewSQL分布式数据库实践（上） </OPTION>
+          <OPTION>专场：传统行业数据应用实践 </OPTION>
+          <OPTION>专场：性能优化与诊断 </OPTION>
+          <OPTION>专场：数据架构设计实践（下） </OPTION>
+          <OPTION>专场：数据仓库与数据治理实践 </OPTION>
+          <OPTION>专场：NewSQL分布式数据库实践（下） </OPTION>
+          <OPTION>专场：数据安全 </OPTION>
+          <OPTION>专场：图数据库技术与实践场 </OPTION>
+          <OPTION>专场：数据库智能运维 </OPTION>
+          <OPTION>专场：数据存储与加速技术 </OPTION>
+          <OPTION>专场：实时计算与流计算 </OPTION>
+          <OPTION>专场：信息流时代的算法应用</OPTION>
+		  <OPTION>专场：SQL优化与审计</OPTION>
+        </SELECT>
+        <i>*</i></li>
+      <li><span>申请人简介</span>
+        <TEXTAREA rows=2 cols=20 id=d_6762 name=d_6762 class="inp"></TEXTAREA>
+        <i>*</i></li>
+      <li><span>申请演讲题目</span>
+        <INPUT type='text' id=c_6763 name=c_6763 class="inp">
+        <i>*</i></li>
+      <li><span>是否可以扩展成为ITPUB学院课程</span> <em>
+        <input name="isedu" type="radio" id="ok" value="是" checked>
+        <label for="ok"> 是</label>
+        </em><em>
+        <input
+                        name="isedu" id="no" type="radio" value="否">
+        <label for="no"> 否</label>
+        </em> <i>*</i></li>
+      <li><span>演讲题目简介</span>
+        <TEXTAREA rows=2 cols=20 id=d_6764 name=d_6764 class="inp"></TEXTAREA>
+        <i>*</i></li>
+      <br>
+      <input type='submit' value='提 交' class="btn">
+    </form>
+  </ul>
+</div>
+<div class="footer_box">
+  <div class="footer">
+    <div class="footer_1"><b>联系我们</b>
+      <ul>
+        <li> 票务咨询：15810741009 </li>
+        <li> 　　　　　meeting@itpub.net </li>
+        <li> 媒体合作：media@it168.com </li>
+        <li> 议题申请：topic@itpub.net </li>
+      </ul>
+    </div>
+    <div class="footer_2"><b>商务合作</b>
+      <ul>
+        <li> 郝福延：13581833935</li>
+        <li> 　　　　haofuyan@it168.com</li>
+        <li> 马　剑：13810752340</li>
+        <li> 　　　　majian@it168.com</li>
+        <li> 叶　咏：13810768442</li>
+        <li> 　　　　yeyong@it168.com </li>
+      </ul>
+    </div>
+    <div class="footer_3"><b>关于我们</b>
+      <div class="guanyu">
+      <div class="col-md-5">
+        <p class="p1"><img src="images/er.png" width="110" height="110" alt=""/></p>
+        <p class="p2">ITPUB 官方微信</p>
+      </div>
+      <div class="col-md-5">
+       <p class="p1"><img src="images/er2.jpg" width="110" height="110" alt=""/></p>
+       <p class="p2">ITPUB 技术栈</p>  
+      </div>
+     
+    </div>
+    </div>
+    <div class="footer_4"><b>主办方</b>
+      <div><img src="images/zhubanfang.jpg" width="91" height="134" alt=""/></div>
+    </div>
+  </div>
+</div>
+<div class="imediate_tickets">
+  <a href="http://dtcc.it168.com/goupiao.html">立即购票</a>
+  <a href="http://dtcc.it168.com/jiangshi.html">讲师申请</a>
+</div>
+<script>
+    $(".m_nav").click(function () {
+            $(".nav").fadeToggle(300);
+            $("body").toggleClass("body2");
+        }
+    );
+</script>
+</body>
+</html>
